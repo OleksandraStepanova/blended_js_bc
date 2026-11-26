@@ -166,3 +166,14 @@
 //
 // Кожен символ повинен вибиратися випадково.
 // Поверніть готовий пароль.
+let userPrompt;
+let sum = 0;
+
+do {
+  userPrompt = prompt("Enter number");
+  const num = Number(userPrompt);
+  if (!Number.isNaN(num)) {
+    sum = sum + num;
+  }
+} while (userPrompt);
+console.log(sum);
